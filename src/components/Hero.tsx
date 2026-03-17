@@ -27,21 +27,21 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
   return (
     <section
       id="product"
-      className="py-16 md:py-24 px-6"
+      className="bg-[#0f172a] py-16 md:py-24 px-6"
     >
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
           {/* Left column: text */}
           <div className="flex-1 min-w-0">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
               {content.headline}
             </h1>
 
-            <p className="text-lg text-gray-600 mt-6 leading-relaxed">
+            <p className="text-lg text-slate-300 mt-6 leading-relaxed">
               {content.subheadline}
             </p>
 
-            <p className="text-sm text-gray-400 mt-2">
+            <p className="text-sm text-slate-400 mt-2">
               {content.supporting}
             </p>
 
@@ -50,7 +50,7 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
               {content.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm"
+                  className="bg-slate-800 text-slate-300 rounded-full px-3 py-1 text-sm"
                 >
                   {tag}
                 </span>
@@ -61,13 +61,13 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
             <div className="flex flex-wrap items-center gap-4 mt-8">
               <button
                 onClick={handlePrimaryClick}
-                className="bg-gray-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+                className="bg-white text-slate-900 px-6 py-3 rounded-lg text-sm font-medium hover:bg-slate-100 transition-colors"
               >
                 {content.ctaPrimary}
               </button>
               <button
                 onClick={handleSecondaryClick}
-                className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors"
+                className="border border-slate-600 text-slate-300 px-6 py-3 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors"
               >
                 {content.ctaSecondary}
               </button>
