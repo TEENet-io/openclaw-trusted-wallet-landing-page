@@ -45,3 +45,4 @@ next-env.d.ts
 tmp/
 .playwright-mcp/
 *.png
+*.jpg
