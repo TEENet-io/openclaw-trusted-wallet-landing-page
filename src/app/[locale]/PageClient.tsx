@@ -9,8 +9,7 @@ import Hero from '@/components/Hero'
 import WhyThisMatters from '@/components/WhyThisMatters'
 import HowItWorks from '@/components/HowItWorks'
 import WhyTrustIt from '@/components/WhyTrustIt'
-import BuiltOnTEENet from '@/components/BuiltOnTEENet'
-import DeveloperSection from '@/components/DeveloperSection'
+import Developers from '@/components/Developers'
 import FAQ from '@/components/FAQ'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -79,10 +78,7 @@ export default function PageClient({ content, locale }: PageClientProps) {
         <WhyTrustIt content={content.whyTrustIt} />
       </ScrollReveal>
       <ScrollReveal>
-        <BuiltOnTEENet content={content.builtOnTEENet} locale={locale} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <DeveloperSection content={content.developerSection} locale={locale} />
+        <Developers content={content.developers} />
       </ScrollReveal>
       <ScrollReveal>
         <FAQ content={content.faq} locale={locale} />

@@ -87,22 +87,18 @@ export const zh: ContentData = {
       },
     ],
   },
-  builtOnTEENet: {
-    title: 'TEENet 驱动',
+  developers: {
+    eyebrow: 'For developers and builders',
+    title: '在 GitHub 上查看这个钱包',
+    subtitle: '先看清钱包应用和 skills 的组织方式，再基于它构建自己的 OpenClaw 流程。',
+    supportingLine: '从代码开始理解，再把这套流程接进你自己的产品、Agent 或用户体验。',
+    ctaPrimary: '前往 GitHub',
+    ctaSecondary: '查看文档',
     points: [
-      '这是一个构建在 TEENet 上的钱包应用——而非完全开源的钱包技术栈。',
-      '它在应用层为 OpenClaw 提供钱包能力。',
-      '敏感审批流程使用 Passkey 进行用户验证。',
-      '执行依赖 TEENet 的可信运行时和策略能力。',
+      { title: '看应用怎么组织', description: '查看钱包操作、审批流程和用户交互是如何串起来的。' },
+      { title: '看 skills 怎么接入', description: '理解 Agent 的动作是如何连接到钱包能力上的。' },
+      { title: '基于它继续构建', description: '把应用逻辑和 skills 改造成你自己的 OpenClaw 场景。' },
     ],
-    closingPhrase: '开放的接入体验，可信的执行底座。',
-    learnMoreText: '进一步了解 TEENet 的信任与安全机制',
-  },
-  developerSection: {
-    title: '开发者集成',
-    description: '开发者可以接入钱包交互、规则控制和审批流程等集成能力。TEENet 运行时本身不开源，但面向应用的集成接入是开放且直接的。',
-    ctaPrimary: '开发者预览',
-    ctaSecondary: '申请接入',
   },
   faq: {
     title: '常见问题',

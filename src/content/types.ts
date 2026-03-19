@@ -75,17 +75,14 @@ export interface ContentData {
     supportingLine: string
     cards: CardItem[]
   }
-  builtOnTEENet: {
+  developers: {
+    eyebrow: string
     title: string
-    points: string[]
-    closingPhrase: string
-    learnMoreText: string
-  }
-  developerSection: {
-    title: string
-    description: string
+    subtitle: string
+    supportingLine: string
     ctaPrimary: string
     ctaSecondary: string
+    points: { title: string; description: string }[]
   }
   faq: {
     title: string

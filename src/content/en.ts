@@ -87,22 +87,18 @@ export const en: ContentData = {
       },
     ],
   },
-  builtOnTEENet: {
-    title: 'Powered by TEENet',
+  developers: {
+    eyebrow: 'For developers and builders',
+    title: 'Explore the wallet on GitHub',
+    subtitle: 'See how the wallet app and skills are structured, then build your own OpenClaw flows on top.',
+    supportingLine: 'Start with the code, then adapt the flow to your own product, agent, or user experience.',
+    ctaPrimary: 'View on GitHub',
+    ctaSecondary: 'Read the docs',
     points: [
-      'This is a wallet application built on TEENet — not a fully open-source wallet stack.',
-      'It provides wallet capabilities to OpenClaw at the application layer.',
-      'Sensitive approval flows use Passkey for user verification.',
-      "Execution relies on TEENet's trusted runtime and policy capabilities.",
+      { title: 'Explore the app', description: 'See how wallet actions, approvals, and user flows are put together.' },
+      { title: 'Inspect the skills', description: 'Understand how agent actions connect to wallet capabilities.' },
+      { title: 'Build your own flow', description: 'Adapt the app logic and skills for your own OpenClaw use case.' },
     ],
-    closingPhrase: 'Open integration, trusted execution.',
-    learnMoreText: 'Learn more about TEENet trust and security',
-  },
-  developerSection: {
-    title: 'Developer Integration',
-    description: 'Skills and integration surfaces are available for developers to integrate wallet interactions, rule controls, and approval flows. TEENet runtime itself is not open source, but application-facing integration is open and straightforward.',
-    ctaPrimary: 'Developer Preview',
-    ctaSecondary: 'Request Access',
   },
   faq: {
     title: 'Frequently Asked Questions',
