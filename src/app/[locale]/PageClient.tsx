@@ -75,7 +75,7 @@ export default function PageClient({ content, locale }: PageClientProps) {
         <HowItWorks content={content.howItWorks} />
       </ScrollReveal>
       <ScrollReveal>
-        <WhyTrustIt content={content.whyTrustIt} />
+        <WhyTrustIt content={content.whyTrustIt} locale={locale} />
       </ScrollReveal>
       <ScrollReveal>
         <Developers content={content.developers} />

@@ -102,8 +102,8 @@ export const teenetPageEn: TeenetPageContent = {
     title: 'Architecture Overview',
     userBox: ['User (OpenClaw)', 'Chat → Action → Approval (Passkey)'],
     runtimeLabel: 'TEE Trusted Runtime',
-    policyBox: ['Policy Engine', 'Rules, Thresholds,', 'Contract Allowlists'],
-    custodyBox: ['Key Custody Service', '(t-of-k threshold)', 'MPC/TSS sharded keys'],
+    policyBox: ['Wallet APP', 'Rules, Thresholds,', 'Contract Allowlists'],
+    custodyBox: ['Key Management Service', '(t-of-k threshold)', 'MPC/TSS sharded keys'],
     hardwareLabel: 'Hardware: Intel TDX / AMD SEV / ARM CCA',
   },
   differentiators: {

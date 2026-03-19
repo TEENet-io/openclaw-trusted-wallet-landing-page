@@ -73,6 +73,7 @@ export interface ContentData {
     title: string
     subtitle: string
     supportingLine: string
+    learnMoreText: string
     cards: CardItem[]
   }
   developers: {

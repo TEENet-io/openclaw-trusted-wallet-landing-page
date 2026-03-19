@@ -68,6 +68,7 @@ export const en: ContentData = {
     title: 'Protected where it matters most',
     subtitle: 'Because the most sensitive parts of the wallet are not left to the agent or ordinary backend logic alone.',
     supportingLine: 'Protected by TEENet where wallet control matters most.',
+    learnMoreText: 'Learn how TEENet protects your wallet',
     cards: [
       {
         title: 'Keys stay out of reach',

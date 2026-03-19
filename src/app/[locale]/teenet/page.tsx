@@ -139,10 +139,10 @@ export default async function TeenetPage({
                 <p className="text-xs text-gray-500 mt-1">{content.architecture.userBox[1]}</p>
               </div>
 
-              {/* Arrow */}
+              {/* Bi-directional Arrow */}
               <div className="flex justify-center">
-                <svg className="w-4 h-6 text-gray-400" fill="none" viewBox="0 0 16 24" stroke="currentColor" strokeWidth={2}>
-                  <path d="M8 0v20M3 16l5 5 5-5" />
+                <svg className="w-4 h-8 text-gray-400" fill="none" viewBox="0 0 16 32" stroke="currentColor" strokeWidth={2}>
+                  <path d="M8 4v24M3 8l5-5 5 5M3 24l5 5 5-5" />
                 </svg>
               </div>
 
@@ -156,10 +156,10 @@ export default async function TeenetPage({
                   <p className="text-xs text-gray-500">{content.architecture.policyBox[1]} {content.architecture.policyBox[2]}</p>
                 </div>
 
-                {/* Arrow */}
+                {/* Bi-directional Arrow */}
                 <div className="flex justify-center my-1">
-                  <svg className="w-3 h-4 text-gray-400" fill="none" viewBox="0 0 12 16" stroke="currentColor" strokeWidth={2}>
-                    <path d="M6 0v12M2 9l4 4 4-4" />
+                  <svg className="w-3 h-6 text-gray-400" fill="none" viewBox="0 0 12 24" stroke="currentColor" strokeWidth={2}>
+                    <path d="M6 4v16M2 7l4-4 4 4M2 17l4 4 4-4" />
                   </svg>
                 </div>
 

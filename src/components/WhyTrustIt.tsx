@@ -1,7 +1,10 @@
+import Link from 'next/link'
 import { ContentData } from '@/content/types'
+import { Locale } from '@/lib/i18n'
 
 interface WhyTrustItProps {
   content: ContentData['whyTrustIt']
+  locale: Locale
 }
 
 const CARD_ICONS = [
@@ -23,7 +26,7 @@ const CARD_ICONS = [
   </svg>,
 ]
 
-export default function WhyTrustIt({ content }: WhyTrustItProps) {
+export default function WhyTrustIt({ content, locale }: WhyTrustItProps) {
   return (
     <section id="security" className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
@@ -58,10 +61,18 @@ export default function WhyTrustIt({ content }: WhyTrustItProps) {
           ))}
         </div>
 
-        {/* Supporting line */}
+        {/* Supporting line + learn more link */}
         <p className="text-sm text-gray-400 text-center mt-8">
           {content.supportingLine}
         </p>
+        <div className="text-center mt-3">
+          <Link
+            href={`/${locale}/teenet`}
+            className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-2 transition-colors"
+          >
+            {content.learnMoreText} &rarr;
+          </Link>
+        </div>
       </div>
     </section>
   )

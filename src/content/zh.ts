@@ -68,6 +68,7 @@ export const zh: ContentData = {
     title: '最关键的部分，始终受到保护',
     subtitle: '因为钱包里最敏感的部分，不会交给 Agent 或普通后端单独处理。',
     supportingLine: '在最关键的钱包控制环节，由 TEENet 提供保护。',
+    learnMoreText: '了解 TEENet 如何保护你的钱包',
     cards: [
       {
         title: '密钥和签名权不暴露',
