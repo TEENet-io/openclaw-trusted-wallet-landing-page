@@ -27,19 +27,19 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
   return (
     <section
       id="product"
-      className="bg-[#0f172a] pt-20 pb-16 md:pt-28 md:pb-24 px-6 overflow-hidden"
+      className="bg-[#0f172a] pt-24 pb-20 md:pt-32 md:pb-28 px-6 overflow-hidden"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-20">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-12">
           {/* Left column: value proposition */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 max-w-2xl">
             {/* Eyebrow */}
-            <p className="text-xs font-medium uppercase tracking-widest text-slate-500 mb-4">
+            <p className="text-xs font-medium uppercase tracking-widest text-slate-500 mb-6">
               {content.eyebrow}
             </p>
 
             {/* Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-[2.5rem] font-bold tracking-tight text-white leading-[1.2]">
+            <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-white leading-[1.15]">
               {content.headline.split('\n').map((line, i, arr) => (
                 <span key={i}>
                   {line}
@@ -49,27 +49,17 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-slate-300 mt-5 leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-300 mt-8 leading-relaxed">
               {content.subheadline}
             </p>
 
-            {/* Benefit Chips */}
-            <div className="flex flex-wrap gap-2.5 mt-6">
-              {content.chips.map((chip) => (
-                <span
-                  key={chip}
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-800/50 px-3.5 py-2 text-[13px] text-slate-300 leading-tight"
-                >
-                  <svg className="h-3.5 w-3.5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                  {chip}
-                </span>
-              ))}
-            </div>
+            {/* Microcopy — key trust differentiator */}
+            <p className="text-[15px] text-emerald-400/90 mt-7 font-medium leading-relaxed border-l-2 border-emerald-500/40 pl-3">
+              {content.microcopy}
+            </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mt-8">
+            <div className="flex flex-wrap items-center gap-4 mt-10">
               <button
                 onClick={handlePrimaryClick}
                 className="bg-white text-slate-900 px-7 py-3 rounded-lg text-sm font-semibold hover:bg-slate-100 transition-colors shadow-lg shadow-white/10"
@@ -84,14 +74,16 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
               </button>
             </div>
 
-            {/* Supporting Line */}
-            <p className="text-sm text-slate-400 mt-6 leading-relaxed max-w-lg">
-              {content.supporting}
-            </p>
-
             {/* Trust Line */}
-            <p className="text-xs text-slate-500 mt-3 font-medium tracking-wide">
-              {content.trustLine}
+            <p className="text-sm text-slate-400 mt-6 font-medium tracking-wide">
+              {content.trustLinePrefix}{' '}
+              <a
+                href={`/${locale}/teenet`}
+                className="text-slate-200 underline decoration-slate-500 underline-offset-2 hover:text-white hover:decoration-slate-300 transition-colors"
+              >
+                {content.trustLineLinkText}
+              </a>
+              .
             </p>
           </div>
 

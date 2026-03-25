@@ -3,12 +3,12 @@ import { ContentData } from './types'
 export const zh: ContentData = {
   locale: 'zh',
   meta: {
-    title: '给 OpenClaw 的可信安全钱包 | TEENet Secure Wallet',
+    title: '给 OpenClaw 的可信安全钱包 | TEENet OpenClaw Wallet',
     description: '通过对话创建和使用链上钱包，为敏感操作设置规则，并通过 Passkey 完成授权，由 TEENet 提供可信执行能力。',
     ogLocale: 'zh_CN',
   },
   header: {
-    brandName: 'TEENet Secure Wallet',
+    brandName: 'TEENet OpenClaw Wallet',
     nav: [
       { label: '产品', href: '#product' },
       { label: '如何工作', href: '#how-it-works' },
@@ -23,11 +23,11 @@ export const zh: ContentData = {
     eyebrow: '面向 OpenClaw 用户、开发者与创业者',
     headline: '一个让你放心交给 Agent 的钱包',
     subheadline: '日常操作交给 Agent，重要的时候你来点头。',
-    chips: ['密钥始终受到保护', 'Agent 必须遵守你的规则', '敏感操作需要你的批准', '用 Passkey 完成确认'],
     ctaPrimary: '加入 Beta',
     ctaSecondary: '观看演示',
-    supporting: '让 Agent 处理日常钱包操作；涉及敏感动作时，通过受保护的签名与审批流程保持控制权。',
-    trustLine: '为 OpenClaw 而生，由 TEENet 提供安全保障。',
+    microcopy: '钱包 App 可以发起操作，但不能自己批准通过。',
+    trustLinePrefix: '为 OpenClaw 而生，由',
+    trustLineLinkText: 'TEENet',
   },
   whyThisMatters: {
     transition: '你想让 Agent 帮你做事，不是替你做主。',
@@ -47,15 +47,15 @@ export const zh: ContentData = {
   howItWorks: {
     eyebrow: 'How it works',
     title: '从聊天到执行，控制始终在线',
-    subtitle: '告诉 Agent，规则先检查，需要时你再确认。',
+    subtitle: '告诉 Agent，TEENet 先检查，需要时你再确认。',
     steps: [
       {
         title: '告诉 Agent 你要做什么',
         description: '在 OpenClaw 里发起一个简单请求。',
       },
       {
-        title: '规则先检查这次操作',
-        description: '限额和批准要求会自动生效。',
+        title: 'TEENet 先检查这次操作',
+        description: '规则和审批要求会在钱包 App 之下完成验证。',
       },
       {
         title: '需要时，再由你确认',
@@ -66,10 +66,14 @@ export const zh: ContentData = {
   whyTrustIt: {
     eyebrow: 'Why you can trust it',
     title: '最关键的部分，始终受到保护',
-    subtitle: '因为钱包里最敏感的部分，不会交给 Agent 或普通后端单独处理。',
-    supportingLine: '在最关键的钱包控制环节，由 TEENet 提供保护。',
+    subtitle: '因为钱包 App 不是最终裁判。敏感操作的批准会在 App 之下由 TEENet 完成验证。',
+    supportingLine: '所以即使 App 或后端出了问题，也不能单独批准关键操作。',
     learnMoreText: '了解 TEENet 如何保护你的钱包',
     cards: [
+      {
+        title: '钱包 App 不能自己批准通过',
+        description: '敏感操作的批准会由 TEENet 的受保护控制层完成验证，而不是由钱包 App 单独放行。',
+      },
       {
         title: '密钥和签名权不暴露',
         description: '签名在受保护环境中完成，不交给 Agent，也不交给普通后端直接处理。',
@@ -79,12 +83,8 @@ export const zh: ContentData = {
         description: '限额、合约限制和审批要求会在执行前生效，不会被 Agent 绕过去。',
       },
       {
-        title: '重要的时候，决定权回到你手里',
-        description: '当敏感操作需要你点头时，用熟悉的 Passkey 流程快速确认。',
-      },
-      {
-        title: '没有单一后端能拿到全部控制权',
-        description: '关键的钱包操作，不会只依赖某一个普通服务单独决定。',
+        title: '没有单一后端能绕过你',
+        description: '关键的钱包操作，不会由某一个普通服务单独决定或放行。',
       },
     ],
   },
@@ -131,6 +131,10 @@ export const zh: ContentData = {
         answer: '是的。开发者和构建者可以在 GitHub 上查看钱包应用和 skills，并在此基础上扩展自己的 OpenClaw 流程。',
       },
       {
+        question: '为什么这里的批准流程更值得信任？',
+        answer: '因为批准不是只靠钱包 App 自己来执行。敏感操作会在 TEENet 的受保护控制层中完成验证，所以普通 App 或后端不能自己把它放行。',
+      },
+      {
         question: '我该怎么开始？',
         answer: '你可以先申请 Beta、观看演示，或者直接去 GitHub 看实现并开始构建。',
       },
@@ -146,7 +150,7 @@ export const zh: ContentData = {
     supporting: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
   },
   footer: {
-    brandName: 'TEENet Secure Wallet',
+    brandName: 'TEENet OpenClaw Wallet',
     brandLine: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
     linkGroups: [
       {
@@ -185,7 +189,7 @@ export const zh: ContentData = {
         ],
       },
     ],
-    copyright: '\u00a9 2026 TEENet Secure Wallet',
+    copyright: '\u00a9 2026 TEENet OpenClaw Wallet',
   },
   betaForm: {
     title: '申请试用',

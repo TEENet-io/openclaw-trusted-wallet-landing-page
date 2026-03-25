@@ -45,11 +45,11 @@ export interface ContentData {
     eyebrow: string
     headline: string
     subheadline: string
-    chips: string[]
     ctaPrimary: string
     ctaSecondary: string
-    supporting: string
-    trustLine: string
+    microcopy: string
+    trustLinePrefix: string
+    trustLineLinkText: string
   }
   whyThisMatters: {
     transition: string

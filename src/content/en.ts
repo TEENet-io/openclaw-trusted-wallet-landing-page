@@ -3,12 +3,12 @@ import { ContentData } from './types'
 export const en: ContentData = {
   locale: 'en',
   meta: {
-    title: 'A Trusted Wallet for OpenClaw | TEENet Secure Wallet',
+    title: 'A Trusted Wallet for OpenClaw | TEENet OpenClaw Wallet',
     description: 'Create and use on-chain wallets through chat, set rules for sensitive actions, and approve risk with Passkey — powered by TEENet trusted execution.',
     ogLocale: 'en_US',
   },
   header: {
-    brandName: 'TEENet Secure Wallet',
+    brandName: 'TEENet OpenClaw Wallet',
     nav: [
       { label: 'Product', href: '#product' },
       { label: 'How It Works', href: '#how-it-works' },
@@ -23,11 +23,11 @@ export const en: ContentData = {
     eyebrow: 'For OpenClaw users, developers, and builders',
     headline: 'A Wallet Your Agent Can Use\n— Without Putting Your Assets at Risk',
     subheadline: 'Let your agent act. Keep approval for what matters.',
-    chips: ['Keys stay protected', 'Your agent follows your rules', 'Sensitive actions need approval', 'Passkey confirmation'],
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'Watch Demo',
-    supporting: 'Handle routine actions with your agent. Keep approval for the ones that matter.',
-    trustLine: 'Built for OpenClaw. Secured by TEENet.',
+    microcopy: 'The wallet app can request an action — but it cannot approve it by itself.',
+    trustLinePrefix: 'Built for OpenClaw. Secured by',
+    trustLineLinkText: 'TEENet',
   },
   whyThisMatters: {
     transition: 'You want your agent to help — not to take over.',
@@ -47,15 +47,15 @@ export const en: ContentData = {
   howItWorks: {
     eyebrow: 'How it works',
     title: 'From chat to action — with control built in',
-    subtitle: 'Ask your agent. Rules check the action. Approve if needed.',
+    subtitle: 'Ask your agent. TEENet checks the action. Approve if needed.',
     steps: [
       {
         title: 'Ask your agent',
         description: 'Start with a simple request in OpenClaw.',
       },
       {
-        title: 'Rules check the action',
-        description: 'Limits and approvals apply automatically.',
+        title: 'TEENet checks the action',
+        description: 'Rules and approval requirements are verified below the wallet app.',
       },
       {
         title: 'Approve if needed',
@@ -66,10 +66,14 @@ export const en: ContentData = {
   whyTrustIt: {
     eyebrow: 'Why you can trust it',
     title: 'Protected where it matters most',
-    subtitle: 'Because the most sensitive parts of the wallet are not left to the agent or ordinary backend logic alone.',
-    supportingLine: 'Protected by TEENet where wallet control matters most.',
+    subtitle: 'Because the wallet app is not the final authority. Sensitive approvals are verified by TEENet below the app layer.',
+    supportingLine: 'So even if the app or backend has a problem, it still cannot approve critical actions on its own.',
     learnMoreText: 'Learn how TEENet protects your wallet',
     cards: [
+      {
+        title: 'The app cannot approve by itself',
+        description: 'Sensitive approvals are verified by TEENet\'s protected control layer, not by the wallet app alone.',
+      },
       {
         title: 'Keys stay out of reach',
         description: 'Signing happens in a protected environment, not inside the agent or a conventional backend.',
@@ -79,11 +83,7 @@ export const en: ContentData = {
         description: 'Limits, contract restrictions, and approval requirements are applied before an action can go through.',
       },
       {
-        title: 'You approve the important moments',
-        description: 'When a sensitive action needs your sign-off, confirm it with Passkey in a familiar flow.',
-      },
-      {
-        title: 'No single backend gets full control',
+        title: 'No single backend can bypass you',
         description: 'Critical wallet actions do not depend on one ordinary service acting alone.',
       },
     ],
@@ -131,6 +131,10 @@ export const en: ContentData = {
         answer: 'Yes. Developers and builders can explore the wallet app and skills on GitHub, then adapt the flow for their own OpenClaw experiences.',
       },
       {
+        question: 'Why is approval more trustworthy here?',
+        answer: 'Because approval is not enforced only by the wallet app itself. Sensitive actions are verified in TEENet\'s protected control layer, so a normal app or backend cannot approve them on its own.',
+      },
+      {
         question: 'How do I get started?',
         answer: 'You can join the beta, watch the demo, or go to GitHub if you want to explore the implementation and build on top of it.',
       },
@@ -146,7 +150,7 @@ export const en: ContentData = {
     supporting: 'Built for OpenClaw. Protected where wallet control matters most.',
   },
   footer: {
-    brandName: 'TEENet Secure Wallet',
+    brandName: 'TEENet OpenClaw Wallet',
     brandLine: 'Built for OpenClaw. Protected where wallet control matters most.',
     linkGroups: [
       {
@@ -185,7 +189,7 @@ export const en: ContentData = {
         ],
       },
     ],
-    copyright: '\u00a9 2026 TEENet Secure Wallet',
+    copyright: '\u00a9 2026 TEENet OpenClaw Wallet',
   },
   betaForm: {
     title: 'Join the Beta',
