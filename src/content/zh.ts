@@ -20,14 +20,20 @@ export const zh: ContentData = {
     ctaSecondary: '查看 Demo',
   },
   hero: {
-    eyebrow: '面向 OpenClaw 用户、开发者与创业者',
+    eyebrow: '面向开发者、创业者与 OpenClaw 用户',
     headline: '一个让你放心交给 Agent 的钱包',
     subheadline: '日常操作交给 Agent，重要的时候你来点头。',
+    badges: ['开源', '你的规则，硬件级执行', 'Passkey 授权'],
     ctaPrimary: '加入 Beta',
     ctaSecondary: '观看演示',
-    microcopy: '钱包 App 可以发起操作，但不能自己批准通过。',
-    trustLinePrefix: '为 OpenClaw 而生，由',
-    trustLineLinkText: 'TEENet',
+    tagline: '为 OpenClaw 而生，由 TEENet 提供安全保障。',
+    flowDiagram: {
+      nodes: [
+        { title: 'Agent 发起操作', subtitle: '发送 0.8 ETH' },
+        { title: '规则检查', subtitle: '超过 0.1 ETH 限额' },
+        { title: '你来确认', subtitle: 'Passkey 已验证' },
+      ],
+    },
   },
   whyThisMatters: {
     transition: '你想让 Agent 帮你做事，不是替你做主。',

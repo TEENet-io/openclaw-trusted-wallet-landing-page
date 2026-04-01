@@ -45,11 +45,13 @@ export interface ContentData {
     eyebrow: string
     headline: string
     subheadline: string
+    badges: string[]
     ctaPrimary: string
     ctaSecondary: string
-    microcopy: string
-    trustLinePrefix: string
-    trustLineLinkText: string
+    tagline: string
+    flowDiagram: {
+      nodes: { title: string; subtitle: string }[]
+    }
   }
   whyThisMatters: {
     transition: string

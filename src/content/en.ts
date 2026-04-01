@@ -20,14 +20,20 @@ export const en: ContentData = {
     ctaSecondary: 'Watch Demo',
   },
   hero: {
-    eyebrow: 'For OpenClaw users, developers, and builders',
-    headline: 'A Wallet Your Agent Can Use\n— Without Putting Your Assets at Risk',
+    eyebrow: 'For developers, builders, and OpenClaw users',
+    headline: 'A Wallet Your Agent Can Use\nWithout Putting Your Assets at Risk',
     subheadline: 'Let your agent act. Keep approval for what matters.',
+    badges: ['Open source', 'Your rules, enforced by hardware', 'Passkey approval'],
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'Watch Demo',
-    microcopy: 'The wallet app can request an action — but it cannot approve it by itself.',
-    trustLinePrefix: 'Built for OpenClaw. Secured by',
-    trustLineLinkText: 'TEENet',
+    tagline: 'Built for OpenClaw. Secured by TEENet.',
+    flowDiagram: {
+      nodes: [
+        { title: 'Agent acts', subtitle: 'Send 0.8 ETH' },
+        { title: 'Rules check', subtitle: 'Exceeds 0.1 ETH limit' },
+        { title: 'You approve', subtitle: 'Passkey confirmed' },
+      ],
+    },
   },
   whyThisMatters: {
     transition: 'You want your agent to help — not to take over.',
