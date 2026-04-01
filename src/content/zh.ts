@@ -71,26 +71,25 @@ export const zh: ContentData = {
   },
   whyTrustIt: {
     eyebrow: 'Why you can trust it',
-    title: '最关键的部分，始终受到保护',
-    subtitle: '因为钱包 App 不是最终裁判。敏感操作的批准会在 App 之下由 TEENet 完成验证。',
-    supportingLine: '所以即使 App 或后端出了问题，也不能单独批准关键操作。',
-    learnMoreText: '了解 TEENet 如何保护你的钱包',
+    title: '安全不靠信任，靠硬件',
+    subtitle: '密钥、规则和签名由硬件保护——不是靠后端的承诺。',
+    learnMoreText: '了解更多 TEENet 安全机制',
     cards: [
       {
-        title: '钱包 App 不能自己批准通过',
-        description: '敏感操作的批准会由 TEENet 的受保护控制层完成验证，而不是由钱包 App 单独放行。',
+        title: '运行在硬件保护的安全飞地中',
+        description: '钱包逻辑——规则检查、授权、签名——在 TEE（可信执行环境）中运行。CPU 本身强制隔离，外部进程无法读取或篡改运行内容。',
       },
       {
-        title: '密钥和签名权不暴露',
-        description: '签名在受保护环境中完成，不交给 Agent，也不交给普通后端直接处理。',
+        title: '密钥被分片存储在多个节点',
+        description: '私钥在 TEE 内生成，永不导出。通过门限密码学分散到多个独立节点。没有任何单一节点——也没有任何单一个人——持有完整密钥。',
       },
       {
-        title: '规则不是建议，而是硬约束',
-        description: '限额、合约限制和审批要求会在执行前生效，不会被 Agent 绕过去。',
+        title: '每个节点都经过硬件验证',
+        description: '任何节点在参与签名之前，必须通过远程证明——由 CPU 生成的密码学证明，确认软件未被篡改。',
       },
       {
-        title: '没有单一后端能绕过你',
-        description: '关键的钱包操作，不会由某一个普通服务单独决定或放行。',
+        title: '没有单一故障点或控制点',
+        description: '签名需要多个 TEE 节点协同完成。没有任何运营方、云服务商或被入侵的服务器能单方面访问你的密钥或执行交易。',
       },
     ],
   },

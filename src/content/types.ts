@@ -74,7 +74,6 @@ export interface ContentData {
     eyebrow: string
     title: string
     subtitle: string
-    supportingLine: string
     learnMoreText: string
     cards: CardItem[]
   }

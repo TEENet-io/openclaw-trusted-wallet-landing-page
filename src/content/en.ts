@@ -71,26 +71,25 @@ export const en: ContentData = {
   },
   whyTrustIt: {
     eyebrow: 'Why you can trust it',
-    title: 'Protected where it matters most',
-    subtitle: 'Because the wallet app is not the final authority. Sensitive approvals are verified by TEENet below the app layer.',
-    supportingLine: 'So even if the app or backend has a problem, it still cannot approve critical actions on its own.',
-    learnMoreText: 'Learn how TEENet protects your wallet',
+    title: 'Security that doesn\'t depend on trust',
+    subtitle: 'Keys, rules, and signing are protected by hardware — not by promises from a backend.',
+    learnMoreText: 'Learn more about TEENet security',
     cards: [
       {
-        title: 'The app cannot approve by itself',
-        description: 'Sensitive approvals are verified by TEENet\'s protected control layer, not by the wallet app alone.',
+        title: 'Runs inside hardware-protected enclaves',
+        description: 'Wallet logic — rule checks, authorization, signing — executes inside TEEs (Trusted Execution Environments). The CPU itself enforces isolation. No external process can read or modify what\'s running.',
       },
       {
-        title: 'Keys stay out of reach',
-        description: 'Signing happens in a protected environment, not inside the agent or a conventional backend.',
+        title: 'Keys are sharded across multiple nodes',
+        description: 'Private keys are generated inside the TEE and never exported. They\'re split across multiple independent nodes using threshold cryptography. No single node — and no single person — ever holds a complete key.',
       },
       {
-        title: 'Rules are enforced, not optional',
-        description: 'Limits, contract restrictions, and approval requirements are applied before an action can go through.',
+        title: 'Every node is verified by hardware',
+        description: 'Before any node can participate in signing, it must pass remote attestation — a cryptographic proof from the CPU that its software hasn\'t been tampered with.',
       },
       {
-        title: 'No single backend can bypass you',
-        description: 'Critical wallet actions do not depend on one ordinary service acting alone.',
+        title: 'No single point of failure or control',
+        description: 'Signing requires multiple TEE nodes to cooperate. No operator, cloud provider, or compromised server can unilaterally access your keys or execute transactions.',
       },
     ],
   },
