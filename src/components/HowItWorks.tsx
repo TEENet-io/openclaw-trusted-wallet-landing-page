@@ -56,7 +56,7 @@ export default function HowItWorks({ content }: HowItWorksProps) {
           </div>
 
           {/* Steps — right on desktop (40-45%) */}
-          <div className="lg:w-[44%] mt-10 lg:mt-0 flex flex-col gap-4">
+          <div className="lg:w-[44%] mt-10 lg:mt-0 flex flex-col gap-5">
             {content.steps.map((step, index) => (
               <div
                 key={step.title}

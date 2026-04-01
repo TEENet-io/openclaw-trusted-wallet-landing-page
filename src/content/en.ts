@@ -52,20 +52,20 @@ export const en: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: 'From chat to action — with control built in',
-    subtitle: 'Ask your agent. TEENet checks the action. Approve if needed.',
+    title: 'A real transaction, start to finish',
+    subtitle: 'Your agent prepares a transfer. The wallet checks it against your rules. You confirm with Passkey.',
     steps: [
       {
-        title: 'Ask your agent',
-        description: 'Start with a simple request in OpenClaw.',
+        title: 'You ask, your agent prepares',
+        description: 'Describe what you need in plain language. Your agent handles the blockchain interaction.',
       },
       {
-        title: 'TEENet checks the action',
-        description: 'Rules and approval requirements are verified below the wallet app.',
+        title: 'Rules are checked inside the TEE',
+        description: 'Before anything is signed, your rules are enforced inside a hardware-protected environment — not by the agent.',
       },
       {
-        title: 'Approve if needed',
-        description: 'Use Passkey when an action needs your sign-off.',
+        title: 'You confirm with Passkey — or reject',
+        description: 'Actions that exceed your limits need your approval. Routine actions within limits go through automatically.',
       },
     ],
   },

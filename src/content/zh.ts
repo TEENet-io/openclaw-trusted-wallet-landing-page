@@ -52,20 +52,20 @@ export const zh: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: '从聊天到执行，控制始终在线',
-    subtitle: '告诉 Agent，TEENet 先检查，需要时你再确认。',
+    title: '一笔真实交易，从头到尾',
+    subtitle: 'Agent 准备一笔转账，钱包对照你的规则检查，你用 Passkey 确认。',
     steps: [
       {
-        title: '告诉 Agent 你要做什么',
-        description: '在 OpenClaw 里发起一个简单请求。',
+        title: '你说，Agent 来准备',
+        description: '用自然语言描述你的需求，Agent 负责处理区块链交互。',
       },
       {
-        title: 'TEENet 先检查这次操作',
-        description: '规则和审批要求会在钱包 App 之下完成验证。',
+        title: '规则在 TEE 内完成检查',
+        description: '在任何签名发生之前，你的规则会在硬件保护的环境中被执行——而不是由 Agent 来执行。',
       },
       {
-        title: '需要时，再由你确认',
-        description: '当操作需要你点头时，用 Passkey 快速确认。',
+        title: '你用 Passkey 确认——或拒绝',
+        description: '超出限额的操作需要你的批准。限额内的日常操作会自动通过。',
       },
     ],
   },
