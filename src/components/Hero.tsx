@@ -94,18 +94,21 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
         </p>
 
         {/* Flow Diagram */}
-        <div className="mt-20 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
           {nodes.map((node, i) => {
             const isLast = i === nodes.length - 1
             const isMiddle = i === 1
 
             let borderColor = 'border-slate-700'
+            let bgColor = 'bg-slate-800/80'
             let accentColor = ''
             if (isMiddle) {
               borderColor = 'border-amber-500/40'
+              bgColor = 'bg-amber-950/30'
               accentColor = 'text-amber-400'
             } else if (isLast) {
               borderColor = 'border-emerald-500/40'
+              bgColor = 'bg-emerald-950/30'
               accentColor = 'text-emerald-400'
             }
 
@@ -113,7 +116,7 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
               <div key={i} className="flex flex-col md:flex-row items-center">
                 {/* Node card */}
                 <div
-                  className={`relative bg-slate-800/80 ${borderColor} border rounded-xl px-8 py-6 w-64 text-center`}
+                  className={`relative ${bgColor} ${borderColor} border rounded-xl px-8 py-6 w-64 text-center`}
                 >
                   <p className={`text-base font-semibold ${accentColor || 'text-white'}`}>
                     {node.title}
@@ -137,21 +140,21 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
                   <>
                     {/* Horizontal arrow — desktop */}
                     <svg
-                      className="hidden md:block w-14 h-5 text-slate-600 flex-shrink-0"
+                      className="hidden md:block w-14 h-5 text-slate-500 flex-shrink-0"
                       viewBox="0 0 40 20"
                       fill="none"
                     >
-                      <line x1="0" y1="10" x2="32" y2="10" stroke="currentColor" strokeWidth="2" />
-                      <path d="M30 4 L38 10 L30 16" stroke="currentColor" strokeWidth="2" fill="none" />
+                      <line x1="0" y1="10" x2="32" y2="10" stroke="currentColor" strokeWidth="2.5" />
+                      <path d="M30 4 L38 10 L30 16" stroke="currentColor" strokeWidth="2.5" fill="none" />
                     </svg>
                     {/* Vertical arrow — mobile */}
                     <svg
-                      className="block md:hidden w-5 h-8 text-slate-600"
+                      className="block md:hidden w-5 h-8 text-slate-500"
                       viewBox="0 0 20 32"
                       fill="none"
                     >
-                      <line x1="10" y1="0" x2="10" y2="24" stroke="currentColor" strokeWidth="2" />
-                      <path d="M4 22 L10 30 L16 22" stroke="currentColor" strokeWidth="2" fill="none" />
+                      <line x1="10" y1="0" x2="10" y2="24" stroke="currentColor" strokeWidth="2.5" />
+                      <path d="M4 22 L10 30 L16 22" stroke="currentColor" strokeWidth="2.5" fill="none" />
                     </svg>
                   </>
                 )}
