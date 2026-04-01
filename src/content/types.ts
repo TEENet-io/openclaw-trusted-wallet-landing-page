@@ -81,7 +81,6 @@ export interface ContentData {
     eyebrow: string
     title: string
     subtitle: string
-    supportingLine: string
     ctaPrimary: string
     ctaSecondary: string
     points: { title: string; description: string }[]

@@ -95,15 +95,14 @@ export const en: ContentData = {
   },
   developers: {
     eyebrow: 'For developers and builders',
-    title: 'Explore the wallet on GitHub',
-    subtitle: 'See how the wallet app and skills are structured, then build your own OpenClaw flows on top.',
-    supportingLine: 'Start with the code, then adapt the flow to your own product, agent, or user experience.',
+    title: 'Open source. Ready to fork.',
+    subtitle: 'The wallet app and agent skills are fully open source. Clone it, customize it, or use it as a reference for your own agent workflow.',
     ctaPrimary: 'View on GitHub',
     ctaSecondary: 'Read the docs',
     points: [
-      { title: 'Explore the app', description: 'See how wallet actions, approvals, and user flows are put together.' },
-      { title: 'Inspect the skills', description: 'Understand how agent actions connect to wallet capabilities.' },
-      { title: 'Build your own flow', description: 'Adapt the app logic and skills for your own OpenClaw use case.' },
+      { title: 'App structure', description: 'Wallet actions, approval flows, and Passkey integration — see how it\'s wired together.' },
+      { title: 'Agent skills', description: 'Pre-built skills for transfers, balance checks, and contract interactions. Extend or replace them.' },
+      { title: 'Fork and build', description: 'Use the wallet as a starting point. Swap the UI, change the rules, connect your own agent.' },
     ],
   },
   faq: {

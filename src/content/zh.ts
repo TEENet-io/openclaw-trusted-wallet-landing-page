@@ -95,15 +95,14 @@ export const zh: ContentData = {
   },
   developers: {
     eyebrow: 'For developers and builders',
-    title: '在 GitHub 上查看这个钱包',
-    subtitle: '先看清钱包应用和 skills 的组织方式，再基于它构建自己的 OpenClaw 流程。',
-    supportingLine: '从代码开始理解，再把这套流程接进你自己的产品、Agent 或用户体验。',
+    title: '开源，随时可 fork。',
+    subtitle: '钱包应用和 Agent skills 完全开源。克隆、定制，或作为你自己 Agent 工作流的参考。',
     ctaPrimary: '前往 GitHub',
     ctaSecondary: '查看文档',
     points: [
-      { title: '看应用怎么组织', description: '查看钱包操作、审批流程和用户交互是如何串起来的。' },
-      { title: '看 skills 怎么接入', description: '理解 Agent 的动作是如何连接到钱包能力上的。' },
-      { title: '基于它继续构建', description: '把应用逻辑和 skills 改造成你自己的 OpenClaw 场景。' },
+      { title: '应用架构', description: '钱包操作、审批流程和 Passkey 集成——看看它是怎么串起来的。' },
+      { title: 'Agent Skills', description: '内置转账、余额查询和合约交互的 skills。可扩展，可替换。' },
+      { title: 'Fork 并构建', description: '把钱包作为起点。换 UI、改规则、接入你自己的 Agent。' },
     ],
   },
   faq: {
