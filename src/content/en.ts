@@ -73,7 +73,7 @@ export const en: ContentData = {
     eyebrow: 'Why you can trust it',
     title: 'Security that doesn\'t depend on trust',
     subtitle: 'Keys, rules, and signing are protected by hardware — not by promises from a backend.',
-    learnMoreText: 'Learn more about TEENet security',
+    learnMoreText: 'Learn more about TEENet',
     cards: [
       {
         title: 'Runs inside hardware-protected enclaves',
@@ -188,7 +188,7 @@ export const en: ContentData = {
           { label: 'GitHub', href: '#' },
           { label: 'Docs', href: '#' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
-          { label: 'TEENet Platform', href: 'https://github.com/TEENet-io' },
+          { label: 'TEENet Platform', href: '/en/platform' },
           { label: 'Developer Preview', href: '#developers' },
           { label: 'Contact', href: 'mailto:contact@teenet.io' },
         ],

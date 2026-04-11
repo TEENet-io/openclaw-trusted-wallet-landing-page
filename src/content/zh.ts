@@ -73,7 +73,7 @@ export const zh: ContentData = {
     eyebrow: 'Why you can trust it',
     title: '安全不靠信任，靠硬件',
     subtitle: '密钥、规则和签名由硬件保护——不是靠后端的承诺。',
-    learnMoreText: '了解更多 TEENet 安全机制',
+    learnMoreText: '了解更多关于 TEENet',
     cards: [
       {
         title: '运行在硬件保护的安全飞地中',
@@ -188,7 +188,7 @@ export const zh: ContentData = {
           { label: 'GitHub', href: '#' },
           { label: '文档', href: '#' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
-          { label: 'TEENet Platform', href: 'https://github.com/TEENet-io' },
+          { label: 'TEENet Platform', href: '/zh/platform' },
           { label: 'Developer Preview', href: '#developers' },
           { label: '联系我们', href: 'mailto:contact@teenet.io' },
         ],

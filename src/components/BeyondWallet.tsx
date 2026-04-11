@@ -1,12 +1,14 @@
 import { ContentData } from '@/content/types'
+import { Locale } from '@/lib/i18n'
 
 interface BeyondWalletProps {
   content: ContentData['beyondWallet']
+  locale: Locale
 }
 
-export default function BeyondWallet({ content }: BeyondWalletProps) {
+export default function BeyondWallet({ content, locale }: BeyondWalletProps) {
   return (
-    <section className="bg-gray-900 py-20 px-6">
+    <section id="teenet" className="bg-gray-900 py-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-sm font-medium tracking-widest uppercase text-gray-400">
           {content.eyebrow}
@@ -28,9 +30,7 @@ export default function BeyondWallet({ content }: BeyondWalletProps) {
           ))}
         </div>
         <a
-          href="https://github.com/TEENet-io"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={`/${locale}/platform`}
           className="inline-flex items-center gap-2 mt-12 bg-white text-gray-900 px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors"
         >
           {content.cta}
