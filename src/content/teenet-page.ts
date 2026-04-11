@@ -108,7 +108,7 @@ export const teenetPageEn: TeenetPageContent = {
     hardware: {
       title: 'Hardware-Isolated Execution',
       body: [
-        'Sensitive wallet logic — authorization checks, rule enforcement, signing — runs inside TEEs (Intel TDX, AMD SEV, ARM CCA). The CPU itself enforces isolation: memory is encrypted, code cannot be injected, and no external process can read or modify the execution state.',
+        'Sensitive wallet logic — authorization checks, rule enforcement, signing — runs inside TEEs (Intel TDX, AMD SEV). The CPU itself enforces isolation: memory is encrypted, code cannot be injected, and no external process can read or modify the execution state.',
         'This is not software sandboxing. It is hardware-level protection enforced by the processor.',
       ],
     },
@@ -144,7 +144,7 @@ export const teenetPageEn: TeenetPageContent = {
     runtimeLabel: 'TEE Trusted Runtime',
     policyBox: ['Wallet APP', 'Rules, Thresholds,', 'Contract Allowlists'],
     custodyBox: ['Key Management Service', '(t-of-k threshold)', 'MPC/TSS sharded keys'],
-    hardwareLabel: 'Hardware: Intel TDX / AMD SEV / ARM CCA',
+    hardwareLabel: 'Hardware: Intel TDX / AMD SEV',
   },
   differentiators: {
     title: 'Key Differentiators',
@@ -203,7 +203,7 @@ export const teenetPageZh: TeenetPageContent = {
     hardware: {
       title: '硬件隔离执行',
       body: [
-        '敏感钱包逻辑——授权检查、规则执行、签名——在 TEE（Intel TDX、AMD SEV、ARM CCA）内运行。CPU 本身强制隔离：内存加密，代码无法注入，外部进程无法读取或修改执行状态。',
+        '敏感钱包逻辑——授权检查、规则执行、签名——在 TEE（Intel TDX、AMD SEV）内运行。CPU 本身强制隔离：内存加密，代码无法注入，外部进程无法读取或修改执行状态。',
         '这不是软件沙箱，而是由处理器强制执行的硬件级保护。',
       ],
     },
@@ -239,7 +239,7 @@ export const teenetPageZh: TeenetPageContent = {
     runtimeLabel: 'TEE 可信运行时',
     policyBox: ['策略引擎', '规则、阈值、', '合约白名单'],
     custodyBox: ['密钥托管服务', '(t-of-k 门限)', 'MPC/TSS 分片密钥'],
-    hardwareLabel: '硬件: Intel TDX / AMD SEV / ARM CCA',
+    hardwareLabel: '硬件: Intel TDX / AMD SEV',
   },
   differentiators: {
     title: '关键差异',

@@ -66,9 +66,7 @@ export default function FinalCTA({ content, locale, onBetaClick }: FinalCTAProps
             {content.ctaTertiary}
           </button>
           <a
-            href="https://github.com/TEENet-io"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}/platform`}
             className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2 transition-colors"
           >
             {content.ctaPlatform} &rarr;

@@ -82,7 +82,7 @@ export default function PageClient({ content, locale }: PageClientProps) {
         <Developers content={content.developers} />
       </ScrollReveal>
       <ScrollReveal>
-        <BeyondWallet content={content.beyondWallet} />
+        <BeyondWallet content={content.beyondWallet} locale={locale} />
       </ScrollReveal>
       <ScrollReveal>
         <FAQ content={content.faq} locale={locale} />
