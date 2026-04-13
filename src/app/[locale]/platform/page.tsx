@@ -217,6 +217,19 @@ export default async function PlatformPage({
               </h3>
               <p className="text-gray-700 leading-relaxed mb-3">
                 {path.description}
+                {path.inlineLink && (
+                  <>
+                    {' '}
+                    <a
+                      href={path.inlineLink.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors"
+                    >
+                      {path.inlineLink.label}
+                    </a>
+                  </>
+                )}
               </p>
               {path.links && (
                 <div className="flex flex-wrap gap-3">
@@ -236,23 +249,6 @@ export default async function PlatformPage({
               )}
             </div>
           ))}
-        </section>
-
-        <hr className="border-gray-200 mb-12" />
-
-        {/* Section 7: Documentation and hardware support */}
-        <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-            {content.hardware.title}
-          </h2>
-          {content.hardware.body.map((p, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-3">
-              {p}
-            </p>
-          ))}
-          <p className="text-gray-500 text-sm italic mt-4">
-            {content.hardware.docNote}
-          </p>
         </section>
 
         <hr className="border-gray-200 mb-12" />

@@ -46,7 +46,9 @@ export default function FinalCTA({ content, locale, onBetaClick }: FinalCTAProps
             {content.ctaPrimary}
           </button>
           <a
-            href="#"
+            href="https://github.com/TEENet-io/teenet-wallet"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleSecondaryClick}
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-gray-300 text-gray-700 text-sm font-semibold hover:bg-gray-100 transition-colors"
           >

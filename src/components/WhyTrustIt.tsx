@@ -64,7 +64,7 @@ export default function WhyTrustIt({ content, locale }: WhyTrustItProps) {
         {/* Learn more — button-style link */}
         <div className="text-center mt-10">
           <Link
-            href={`/${locale}#teenet`}
+            href={`/${locale}/platform`}
             className="inline-flex items-center gap-1.5 border border-gray-300 text-gray-700 px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:border-gray-400 transition-colors"
           >
             {content.learnMoreText}

@@ -108,8 +108,8 @@ export const zh: ContentData = {
   beyondWallet: {
     eyebrow: 'BEYOND THE WALLET',
     title: 'TEENet 是一个平台——不只是钱包的后端',
-    description: '这个钱包只是 TEENet 上的一个应用。平台提供硬件隔离执行、托管密钥保管和可配置的审批策略——从 AI Agent 钱包到自动交易系统，再到跨链桥，任何需要这些能力的应用都可以使用。',
-    tags: ['硬件隔离运行时', '托管密钥保管', '可配置审批策略'],
+    description: '这个钱包只是 TEENet 上的一个应用。平台提供硬件隔离运行时和托管密钥保管，适用于任何需要保护秘密和执行规则的应用——从 AI Agent 钱包到自动交易系统，再到跨链桥。',
+    tags: ['硬件隔离运行时', '托管密钥保管', '硬件强制访问控制'],
     cta: '探索 TEENet 平台',
   },
   faq: {

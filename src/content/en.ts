@@ -108,8 +108,8 @@ export const en: ContentData = {
   beyondWallet: {
     eyebrow: 'BEYOND THE WALLET',
     title: 'TEENet is a platform — not just a wallet backend',
-    description: 'This wallet is one application built on TEENet. The platform provides hardware-isolated execution, managed key custody, and configurable approval policies for any application that needs them — from AI agent wallets to autonomous trading systems to cross-chain bridges.',
-    tags: ['Hardware-isolated runtime', 'Managed key custody', 'Configurable approval policies'],
+    description: 'This wallet is one application built on TEENet. The platform provides a hardware-isolated runtime and managed key custody for any application that needs to protect secrets and enforce rules — from AI agent wallets to autonomous trading systems to cross-chain bridges.',
+    tags: ['Hardware-isolated runtime', 'Managed key custody', 'Hardware-enforced access control'],
     cta: 'Explore TEENet Platform',
   },
   faq: {

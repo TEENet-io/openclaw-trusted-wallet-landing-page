@@ -12,6 +12,7 @@ export interface GetStartedPath {
   title: string
   description: string
   links?: { label: string; href: string }[]
+  inlineLink?: { label: string; href: string }
 }
 
 export interface PlatformDiagram {
@@ -54,11 +55,6 @@ export interface PlatformPageContent {
     title: string
     description: string
     paths: GetStartedPath[]
-  }
-  hardware: {
-    title: string
-    body: string[]
-    docNote: string
   }
   contact: {
     title: string
@@ -124,7 +120,7 @@ export const platformPageEn: PlatformPageContent = {
       {
         title: 'Provably unable to cheat',
         description:
-          'TEENet combines hardware isolation (TEE) with threshold signatures (TSS) and multi-party computation (MPC) to shard keys across multiple independent nodes. No single party \u2014 including the operator \u2014 can reconstruct a key or sign alone. \u201CWe can\u2019t access your secrets\u201D becomes a hardware-enforced fact, verifiable through remote attestation.',
+          'TEENet combines hardware isolation (TEE) with threshold signatures (TSS) and multi-party computation (MPC) to shard keys across multiple independent nodes. No single party \u2014 including the operator \u2014 can reconstruct a key or sign alone. Even physical compromise of any single node yields only a useless shard, not a complete key. \u201CWe can\u2019t access your secrets\u201D becomes a hardware-enforced fact, verifiable through remote attestation.',
       },
     ],
   },
@@ -164,26 +160,14 @@ export const platformPageEn: PlatformPageContent = {
         ],
       },
       {
-        title: 'Apply for TEENet Developer Preview',
-        description:
-          'If you want to build your own application on TEENet, apply for early access. We\u2019ll review your use case and onboard selected developers with SDK access, documentation, and direct support.',
-        links: [
-          { label: 'Apply for Developer Preview', href: 'mailto:contact@teenet.io' },
-        ],
+        title: 'Documentation',
+        description: 'Full platform documentation, SDK reference, and integration guides:',
+        inlineLink: {
+          label: 'https://teenet-io.github.io',
+          href: 'https://teenet-io.github.io',
+        },
       },
     ],
-  },
-
-  hardware: {
-    title: 'Documentation and hardware support',
-    body: [
-      'TEENet currently supports:',
-      '• Intel TDX (Trust Domain Extensions)',
-      '• AMD SEV (Secure Encrypted Virtualization)',
-      'Additional TEE platforms may be supported in the future.',
-    ],
-    docNote:
-      'Full platform documentation \u2014 including SDK reference, integration guides, and architecture overview \u2014 will be available at the TEENet Doc Center (coming soon).',
   },
 
   contact: {
@@ -253,7 +237,7 @@ export const platformPageZh: PlatformPageContent = {
       {
         title: '可证明无法作恶',
         description:
-          'TEENet 将硬件隔离（TEE）与门限签名（TSS）和多方安全计算（MPC）相结合，将密钥分片到多个独立节点上。没有任何单一方——包括运营方——能独自重建密钥或完成签名。"我们无法访问你的秘密"成为一项由硬件强制执行的事实，可通过远程证明进行验证。',
+          'TEENet 将硬件隔离（TEE）与门限签名（TSS）和多方安全计算（MPC）相结合，将密钥分片到多个独立节点上。没有任何单一方——包括运营方——能独自重建密钥或完成签名。即使某个节点被物理攻破，攻击者得到的也只是一个无用的分片，而非完整密钥。"我们无法访问你的秘密"成为一项由硬件强制执行的事实，可通过远程证明进行验证。',
       },
     ],
   },
@@ -293,24 +277,14 @@ export const platformPageZh: PlatformPageContent = {
         ],
       },
       {
-        title: '申请 TEENet Developer Preview',
-        description:
-          '如果你想在 TEENet 上构建自己的应用，请申请早期访问。我们会审核你的用例，并为入选的开发者提供 SDK 访问、文档和直接支持。',
-        links: [{ label: '申请 Developer Preview', href: 'mailto:contact@teenet.io' }],
+        title: '文档',
+        description: '完整的平台文档、SDK 参考和集成指南：',
+        inlineLink: {
+          label: 'https://teenet-io.github.io',
+          href: 'https://teenet-io.github.io',
+        },
       },
     ],
-  },
-
-  hardware: {
-    title: '文档与硬件支持',
-    body: [
-      'TEENet 目前支持：',
-      '• Intel TDX（Trust Domain Extensions）',
-      '• AMD SEV（Secure Encrypted Virtualization）',
-      '未来可能支持更多 TEE 平台。',
-    ],
-    docNote:
-      '完整的平台文档——包括 SDK 参考、集成指南和架构概览——将在 TEENet Doc Center 上线（即将推出）。',
   },
 
   contact: {
