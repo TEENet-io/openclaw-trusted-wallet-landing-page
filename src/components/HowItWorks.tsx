@@ -2,15 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import { ContentData } from '@/content/types'
-import TelegramAnimation from './mockups/TelegramAnimation'
+import DemoVideoMockup from './mockups/DemoVideoMockup'
 
-/* Animation loop: 10s content + 1.2s gap before restart */
-const TOTAL_LOOP_MS = 11200
+/* Animation loop: matched to the 17s edited phone recording */
+const TOTAL_LOOP_MS = 17000
 const TICK_INTERVAL_MS = 80
 
-/* Phase boundaries (ms) — aligned with TelegramAnimation thresholds */
-const STEP_1_END = 3200
-const STEP_2_END = 5600
+/* Phase boundaries (ms) — aligned with the video storyboard */
+const STEP_1_END = 2500
+const STEP_2_END = 6500
 
 interface HowItWorksProps {
   content: ContentData['howItWorks']
@@ -27,8 +27,7 @@ export default function HowItWorks({ content }: HowItWorksProps) {
     return () => clearInterval(interval)
   }, [])
 
-  const isGap = elapsed >= 10000
-  const activeStep = isGap ? -1 : elapsed < STEP_1_END ? 0 : elapsed < STEP_2_END ? 1 : 2
+  const activeStep = elapsed < STEP_1_END ? 0 : elapsed < STEP_2_END ? 1 : 2
 
   return (
     <section id="how-it-works" className="bg-gray-50 py-20 px-6">
@@ -52,7 +51,7 @@ export default function HowItWorks({ content }: HowItWorksProps) {
         <div className="mt-12 flex flex-col lg:flex-row lg:items-center lg:gap-14">
           {/* Animation — left on desktop (55-60%) */}
           <div className="lg:w-[56%] flex justify-center">
-            <TelegramAnimation elapsed={elapsed} isGap={isGap} />
+            <DemoVideoMockup elapsed={elapsed} />
           </div>
 
           {/* Steps — right on desktop (40-45%) */}
