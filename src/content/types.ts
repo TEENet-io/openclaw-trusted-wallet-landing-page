@@ -13,16 +13,6 @@ export interface StepItem {
   description: string
 }
 
-export interface FeatureItem {
-  title: string
-  description: string
-}
-
-export interface FAQItem {
-  question: string
-  answer: string
-}
-
 export interface FooterLinkGroup {
   title: string
   links: { label: string; href: string }[]
@@ -53,17 +43,6 @@ export interface ContentData {
       nodes: { title: string; subtitle: string }[]
     }
   }
-  whyThisMatters: {
-    transition: string
-    title: string
-    subtitle: string
-    cards: CardItem[]
-    passkey: {
-      tooltipTitle: string
-      tooltipBody: string
-      tooltipRef: string
-    }
-  }
   howItWorks: {
     eyebrow: string
     title: string
@@ -92,19 +71,11 @@ export interface ContentData {
     tags: string[]
     cta: string
   }
-  faq: {
-    eyebrow: string
-    title: string
-    subtitle: string
-    items: FAQItem[]
-    ctaBridge: string
-  }
   finalCTA: {
     title: string
     subtitle: string
     ctaPrimary: string
     ctaSecondary: string
-    ctaTertiary: string
     ctaPlatform: string
     supporting: string
   }
@@ -113,13 +84,5 @@ export interface ContentData {
     brandLine: string
     linkGroups: FooterLinkGroup[]
     copyright: string
-  }
-  betaForm: {
-    title: string
-    placeholder: string
-    submit: string
-    success: string
-    error: string
-    close: string
   }
 }

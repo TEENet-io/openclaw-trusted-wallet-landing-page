@@ -195,16 +195,6 @@ export default async function PlatformPage({
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
                   {path.description}
                 </p>
-                {path.inlineLink && (
-                  <a
-                    href={path.inlineLink.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex text-sm font-medium text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors"
-                  >
-                    {path.inlineLink.label}
-                  </a>
-                )}
                 {path.links && (
                   <div className="mt-5 flex flex-wrap gap-3">
                     {path.links.map((link) => (

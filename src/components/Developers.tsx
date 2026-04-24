@@ -41,7 +41,7 @@ const POINT_ICONS = [
 
 export default function Developers({ content }: DevelopersProps) {
   return (
-    <section id="developers" className="bg-gray-50 py-24 px-6">
+    <section id="developers" className="bg-gray-50 py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Top: left-aligned header + CTAs | right: repo visual */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-14">
@@ -56,7 +56,7 @@ export default function Developers({ content }: DevelopersProps) {
             <p className="text-base text-gray-500 mt-5 leading-relaxed">
               {content.subtitle}
             </p>
-            <div className="flex flex-wrap items-center gap-3 mt-10">
+            <div className="flex flex-wrap items-center gap-3 mt-8">
               <a
                 href="https://github.com/TEENet-io/teenet-wallet"
                 target="_blank"
@@ -116,7 +116,7 @@ export default function Developers({ content }: DevelopersProps) {
         </div>
 
         {/* Bottom: 3 builder points — full-width row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {content.points.map((point, index) => (
             <div
               key={point.title}

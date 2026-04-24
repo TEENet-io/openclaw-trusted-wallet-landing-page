@@ -22,7 +22,7 @@ export default function FinalCTA({ content, locale }: FinalCTAProps) {
   }
 
   return (
-    <section className="bg-gray-50 py-32 px-6">
+    <section className="bg-gray-50 py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

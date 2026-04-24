@@ -12,7 +12,6 @@ export interface GetStartedPath {
   title: string
   description: string
   links?: { label: string; href: string }[]
-  inlineLink?: { label: string; href: string }
 }
 
 export interface PlatformDiagram {
@@ -56,13 +55,6 @@ export interface PlatformPageContent {
     description: string
     paths: GetStartedPath[]
   }
-  contact: {
-    title: string
-    body: string[]
-    email: string
-    followLabel: string
-    socialLinks: { label: string; href: string }[]
-  }
 }
 
 export const platformPageEn: PlatformPageContent = {
@@ -75,15 +67,15 @@ export const platformPageEn: PlatformPageContent = {
   title: 'TEENet Platform',
 
   fromWallet: {
-    title: 'Start with the wallet, build beyond it',
+    title: 'The control layer behind the wallet',
     body: [
-      'TEENet Wallet is an alpha reference app: an agent can manage testnet assets without ever holding a private key.',
-      'The same model applies anywhere your application handles secrets, signs requests, or needs approval policies. TEENet is the control layer underneath.',
+      'TEENet Wallet is an alpha reference app where an agent can manage testnet assets without ever holding a private key.',
+      'That same pattern applies anywhere your application handles secrets, signs requests, or needs approval policies.',
     ],
   },
 
   problems: {
-    title: 'Three problems builders hit first',
+    title: 'What breaks first when your app handles secrets',
     painPoints: [
       {
         title: 'Secrets sit in your infrastructure',
@@ -104,7 +96,7 @@ export const platformPageEn: PlatformPageContent = {
   },
 
   solutions: {
-    title: 'What TEENet gives you',
+    title: 'What TEENet adds',
     items: [
       {
         title: 'Hardware-isolated execution',
@@ -139,20 +131,19 @@ export const platformPageEn: PlatformPageContent = {
   whyPlatform: {
     title: 'Why a platform, not a toolkit',
     body: [
-      'You could spin up your own TEE instance with Intel TDX or AMD SEV. But going from a single enclave to a production system means solving key sharding, multi-party signing, mutual attestation, and node failover on your own.',
-      'TEENet handles all of this so you can focus on your application \u2014 the security of a distributed TEE network with the convenience of a managed service.',
+      'A single enclave is not enough. TEENet packages sharding, attestation, distributed signing, and failover into one builder-facing platform.',
     ],
   },
 
   getStarted: {
     title: 'Start building',
     description:
-      'The platform is still early. The best way in today is through the wallet reference app, the docs, and the SDK.',
+      'The platform is still early. Today the best entry points are the wallet reference app, the docs, and the SDK.',
     paths: [
       {
         title: 'Explore the wallet reference app',
         description:
-          'Read the open-source wallet, inspect the approval flow, or compare it with the live alpha app.',
+          'Read the open-source wallet, inspect the approval flow, and compare it with the live alpha app.',
         links: [
           { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: 'Wallet Documentation', href: 'https://teenet-io.github.io/teenet-wallet/' },
@@ -161,7 +152,7 @@ export const platformPageEn: PlatformPageContent = {
       },
       {
         title: 'Read docs and SDK',
-        description: 'Use the platform docs and SDK reference as the builder entry point.',
+        description: 'Use the platform docs and SDK reference as your builder entry point.',
         links: [
           { label: 'Platform Docs', href: 'https://teenet-io.github.io' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
@@ -177,17 +168,6 @@ export const platformPageEn: PlatformPageContent = {
       },
     ],
   },
-
-  contact: {
-    title: 'Get in touch',
-    body: ['Have questions about the platform, the SDK, or early access?'],
-    email: 'contact@teenet.io',
-    followLabel: 'Follow our progress:',
-    socialLinks: [
-      { label: 'GitHub', href: 'https://github.com/TEENet-io' },
-      { label: 'Twitter', href: 'https://x.com/AiTeenet' },
-    ],
-  },
 }
 
 export const platformPageZh: PlatformPageContent = {
@@ -200,15 +180,15 @@ export const platformPageZh: PlatformPageContent = {
   title: 'TEENet 平台',
 
   fromWallet: {
-    title: '先从钱包开始，再往更广的应用走',
+    title: '钱包背后的控制层',
     body: [
       'TEENet Wallet 是一个 Alpha 参考应用：Agent 可以管理测试网资产，但整个过程中都拿不到私钥。',
-      '只要你的应用会处理秘密、发起签名，或者需要审批策略，这套模型都成立。TEENet 就是它底下的控制层。',
+      '只要你的应用会处理秘密、发起签名，或者需要审批策略，这套模式就成立。',
     ],
   },
 
   problems: {
-    title: 'Builder 最先撞上的三个问题',
+    title: '你的应用一碰秘密，最先坏掉的是什么',
     painPoints: [
       {
         title: '秘密仍然放在你的基础设施里',
@@ -229,7 +209,7 @@ export const platformPageZh: PlatformPageContent = {
   },
 
   solutions: {
-    title: 'TEENet 提供什么',
+    title: 'TEENet 补上的是什么',
     items: [
       {
         title: '硬件隔离执行',
@@ -264,20 +244,19 @@ export const platformPageZh: PlatformPageContent = {
   whyPlatform: {
     title: '为什么是平台，而不是工具包',
     body: [
-      '你当然可以自己用 Intel TDX 或 AMD SEV 启动一个 TEE 实例。但从单个 enclave 走向生产系统，意味着你要独自解决密钥分片、多方签名、相互证明以及节点故障切换等难题。',
-      'TEENet 已经替你把这些全部处理好，让你能够专注在自己的应用上——分布式 TEE 网络的安全特性，以及托管服务的便利。',
+      '单个 enclave 不够用。TEENet 把分片、证明、分布式签名和故障切换打包成一个真正可用的 builder 平台。',
     ],
   },
 
   getStarted: {
     title: '开始构建',
     description:
-      '平台目前还很早期。现阶段最好的入口是钱包参考实现、文档和 SDK。',
+      '平台还很早期。现阶段最好的入口是钱包参考实现、文档和 SDK。',
     paths: [
       {
         title: '先看钱包参考实现',
         description:
-          '阅读开源钱包、理解审批流，或者和线上 Alpha App 对照着看。',
+          '阅读开源钱包、理解审批流，并和线上 Alpha App 对照着看。',
         links: [
           { label: '钱包 (GitHub)', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: '钱包文档', href: 'https://teenet-io.github.io/teenet-wallet/' },
@@ -286,7 +265,7 @@ export const platformPageZh: PlatformPageContent = {
       },
       {
         title: '查看文档和 SDK',
-        description: '从平台文档和 SDK 参考开始，了解集成方式。',
+        description: '从平台文档和 SDK 参考开始，了解怎么接入。',
         links: [
           { label: '平台文档', href: 'https://teenet-io.github.io' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
@@ -300,17 +279,6 @@ export const platformPageZh: PlatformPageContent = {
           { label: 'TEENet GitHub', href: 'https://github.com/TEENet-io' },
         ],
       },
-    ],
-  },
-
-  contact: {
-    title: '联系我们',
-    body: ['对平台、SDK 或早期访问有疑问？'],
-    email: 'contact@teenet.io',
-    followLabel: '关注我们的进展：',
-    socialLinks: [
-      { label: 'GitHub', href: 'https://github.com/TEENet-io' },
-      { label: 'Twitter', href: 'https://x.com/AiTeenet' },
     ],
   },
 }

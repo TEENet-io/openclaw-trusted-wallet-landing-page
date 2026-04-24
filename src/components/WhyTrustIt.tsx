@@ -28,7 +28,7 @@ const CARD_ICONS = [
 
 export default function WhyTrustIt({ content, locale }: WhyTrustItProps) {
   return (
-    <section id="security" className="bg-white py-24 px-6">
+    <section id="security" className="bg-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Eyebrow */}
         <p className="text-sm font-medium text-gray-400 tracking-widest uppercase text-center">
@@ -46,7 +46,7 @@ export default function WhyTrustIt({ content, locale }: WhyTrustItProps) {
         </p>
 
         {/* 2×2 Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
           {content.cards.map((card, index) => (
             <div
               key={card.title}
@@ -62,7 +62,7 @@ export default function WhyTrustIt({ content, locale }: WhyTrustItProps) {
         </div>
 
         {/* Learn more — button-style link */}
-        <div className="text-center mt-10">
+        <div className="text-center mt-8">
           <Link
             href={`/${locale}/platform`}
             className="inline-flex items-center gap-1.5 border border-gray-300 text-gray-700 px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:border-gray-400 transition-colors"

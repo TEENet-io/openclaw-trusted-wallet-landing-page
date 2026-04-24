@@ -31,7 +31,7 @@ export default function HowItWorks({ content }: HowItWorksProps) {
   const activeStep = isGap ? -1 : elapsed < STEP_1_END ? 0 : elapsed < STEP_2_END ? 1 : 2
 
   return (
-    <section id="how-it-works" className="bg-gray-50 py-24 px-6">
+    <section id="how-it-works" className="bg-gray-50 py-20 px-6">
       <div className="mx-auto max-w-6xl">
         {/* Eyebrow */}
         <p className="text-sm font-medium text-gray-400 tracking-widest uppercase text-center">
@@ -49,7 +49,7 @@ export default function HowItWorks({ content }: HowItWorksProps) {
         </p>
 
         {/* Desktop: side-by-side  |  Mobile: stacked */}
-        <div className="mt-14 flex flex-col lg:flex-row lg:items-center lg:gap-14">
+        <div className="mt-12 flex flex-col lg:flex-row lg:items-center lg:gap-14">
           {/* Animation — left on desktop (55-60%) */}
           <div className="lg:w-[56%] flex justify-center">
             <TelegramAnimation elapsed={elapsed} isGap={isGap} />

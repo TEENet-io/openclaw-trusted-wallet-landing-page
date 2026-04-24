@@ -8,7 +8,7 @@ interface BeyondWalletProps {
 
 export default function BeyondWallet({ content, locale }: BeyondWalletProps) {
   return (
-    <section id="teenet" className="bg-gray-900 py-20 px-6">
+    <section id="teenet" className="bg-gray-900 py-16 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-sm font-medium tracking-widest uppercase text-gray-400">
           {content.eyebrow}
@@ -19,7 +19,7 @@ export default function BeyondWallet({ content, locale }: BeyondWalletProps) {
         <p className="text-base text-gray-400 mt-4 leading-relaxed">
           {content.description}
         </p>
-        <div className="flex flex-wrap justify-center gap-3 mt-8">
+        <div className="flex flex-wrap justify-center gap-3 mt-7">
           {content.tags.map((tag) => (
             <span
               key={tag}
@@ -31,7 +31,7 @@ export default function BeyondWallet({ content, locale }: BeyondWalletProps) {
         </div>
         <a
           href={`/${locale}/platform`}
-          className="inline-flex items-center gap-2 mt-12 bg-white text-gray-900 px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors"
+          className="inline-flex items-center gap-2 mt-10 bg-white text-gray-900 px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors"
         >
           {content.cta}
           <span aria-hidden="true">&rarr;</span>
