@@ -68,10 +68,10 @@ export const platformPageEn: PlatformPageContent = {
   title: 'TEENet Platform',
 
   fromWallet: {
-    title: 'The control layer behind the wallet',
+    title: 'A control layer for agentic applications',
     body: [
-      'TEENet Wallet is an alpha reference app where an agent can manage testnet assets without ever holding a private key.',
-      'That same pattern applies anywhere your application handles secrets, signs requests, or needs approval policies.',
+      'TEENet Platform provides hardware-isolated execution, managed custody, and policy enforcement for applications that handle secrets or sign requests.',
+      'TEENet Wallet is one open-source example of what builders can run on top of it.',
     ],
     actions: [
       { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
@@ -186,10 +186,10 @@ export const platformPageZh: PlatformPageContent = {
   title: 'TEENet 平台',
 
   fromWallet: {
-    title: '钱包背后的控制层',
+    title: '面向 Agent 应用的控制层',
     body: [
-      'TEENet Wallet 是一个 Alpha 参考应用：Agent 可以管理测试网资产，但整个过程中都拿不到私钥。',
-      '只要你的应用会处理秘密、发起签名，或者需要审批策略，这套模式就成立。',
+      'TEENet Platform 为需要处理秘密或发起签名的应用提供硬件隔离执行、托管式密钥保管和策略执行。',
+      'TEENet Wallet 是一个开源示例，展示 builder 可以在这层平台之上运行什么。',
     ],
     actions: [
       { label: '钱包 GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
